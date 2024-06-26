@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.container .navbar, .navbar .navlist{
+    display: flex;
+    align-items: center;
+}
+.container .navbar{
+    height: 13vh;
+    width: 85%;
+    justify-content: space-between;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar .logo{
+    font-size: 1.3rem;
+    color: #3f2b27;
+    font-weight: bold;
+}
+.navlist li{
+    list-style: none;
+
+}
+.navlist li a{
+    text-decoration: none;
+    margin-right: 2rem;
+    color: black;
+    text-transform: uppercase;
+    transition: .3sec ease;
+}
+.navlist li a:hover{
+    color: #fff;
+}
+.navlist button{
+    border: none;
+    font-size: 1rem;
+    background: #3f2b27;
+    color: #fff;
+    padding: .5rem 1.2rem;
+    text-transform: uppercase;
+    transition: transform .5sec;
+
+}
+.container .left-site{
+    background: #fff;
+}
+.container .right-site{
+    background: #f3C318;
+}
+.container .left-site, .container .right-site{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.navlist .active{
+    color: #fff;
+}
+.left-site .content{
+    margin: 0 4rem 0 9rem;
+}
+.content h1{
+    color: #3f2b27;
+    font-size: 4rem;
+}
+.content p{
+    font-size: 1rem;
+    color: rgb(71, 71, 71);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.content button{
+    border: none;
+    font-size: 1rem;
+    background: #f3C318;
+    color: #3f2b27;
+    padding: 1rem 1.2rem;
+    transition: transform .5sec;
+
+}
+.navlist button:hover, .content button:hover{
+    transform: skew(-15deg);
+    cursor: pointer;
+}
+.container .line{
+    width: 20rem;
+    height: .2rem;
+    background: linear-gradient(-90deg, #fff 50%, #f3C318 50%);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 100px;
+
+
+}
+.menu{
+    background: #3f2b27;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 0 .7rem;
+}
+.menu .circle{
+    width: 4rem;
+    aspect-ratio: 1;
+    background: #fff;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transition: transform .3s;
+    position: relative;
+}
+.circle:nth-child(1){
+    background-image: url(images/pngwing.com\ \(1\).png);
+}
+.circle:nth-child(2){
+    background-image: url(images/pngwing.com\ \(2\).png);
+}
+.circle:nth-child(3){
+    background-image: url(images/pngwing.com\ \(3\).png);
+}
+.circle:nth-child(4){
+    background-image: url(images/pngwing.com.png);
+}
+.menu .circle:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+.circle .title{
+    font-size: .9rem;
+    color: white;
+    background: #3f2b27;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: .2rem 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .3s;
+}
+.circle:hover .title{
+    opacity: 1;
+}
+.right-site .image-container img{
+    width: 43rem;
+}
